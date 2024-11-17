@@ -1,5 +1,3 @@
-#include<stddef.h>
-#include "functions.h"
 #include "macro_defs.h"
 
 unsigned int char_count(char *line, size_t line_length, char *search)
