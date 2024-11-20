@@ -5,7 +5,7 @@
 #define funlockfile(x) ((void) 0)
 #define getc_maybe_unlocked(stream) getc(stream)
 
-void static alloc_failed(void)
+static void alloc_failed(void)
 {
 #if defined _WIN32 && ! defined __CYGWIN__
 	errno = ENOMEM;
@@ -16,7 +16,8 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream)
 {
 	ssize_t result;
 	size_t current_length = 0;
-	if (lineptr == NULL || n == NULL || stream == NULL) {
+	/* stream is not null anyways */
+	if (lineptr == NULL || n == NULL) {
 		errno = EINVAL;
 		return -1;
 	}
@@ -56,14 +57,13 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream)
 			*lineptr = new_lineptr;
 			*n = needed;
 		}
-		(*lineptr)[current_length] = character;
+		(*lineptr)[current_length] = (char) character;
 		current_length++;
 		if (character == '\n') break;
 	}
 	(*lineptr)[current_length] = '\0';
-	result = current_length ? current_length : result;
+	result = current_length ? (ssize_t) current_length : result;
 unlock_return:
 	funlockfile(stream);
 	return result;
 }
-

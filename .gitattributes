@@ -120,6 +120,18 @@
 *.pub linguist-detectable
 *.mtml linguist-documentation=false
 *.mtml linguist-detectable
+*.gitattributes linguist-documentation=false
+*.gitattributes linguist-detectable
+*.ini linguist-documentation=false
+*.ini linguist-detectable
+*.mako linguist-documentation=false
+*.mako linguist-detectable
+*.res linguist-documentation=false
+*.res linguist-detectable
+*.cmake linguist-documentation=false
+*.cmake linguist-detectable
+
+*.mps linguist-detectable=false
 
 MD5SUMS linguist-documentation=false
 MD5SUMS linguist-detectable
@@ -149,11 +161,27 @@ gitignore linguist-documentation=false
 gitignore linguist-detectable
 .gitconfig linguist-documentation=false
 .gitconfig linguist-detectable
+.gitattributes linguist-documentation=false
+.gitattributes linguist-detectable
+gitattributes linguist-documentation=false
+gitattributes linguist-detectable
 gitconfig linguist-documentation=false
 gitconfig linguist-detectable
 hosts linguist-documentation=false
 hosts linguist-detectable
 PKGBUILD linguist-documentation=false
 PKGBUILD linguist-detectable
+CODEOWNER linguist-documentation=false
+CODEOWNER linguist-detectable
+CODEOWNERS linguist-documentation=false
+CODEOWNERS linguist-detectable
 COPYING linguist-documentation=false
 COPYING linguist-detectable
+INSTALL linguist-documentation=false
+INSTALL linguist-detectable
+NEWS linguist-documentation=false
+NEWS linguist-detectable
+README linguist-documentation=false
+README linguist-detectable
+CMakeLists.txt linguist-documentation=false
+CMakeLists.txt linguist-detectable

@@ -1,3 +1,9 @@
+commit 15d4a74d94e661cd499581f13814b4490c7c967c
+Author: mb6ockatf <mdddmmmm@yandex.ru>
+Date:   Sun Nov 17 12:35:23 2024 +0300
+
+    chore(getline): remove _GNU_SOURCE dependency
+
 commit 626b0ec5ee99adc4a5c9e9193da3bdc880cbbeec
 Author: mb6ockatf <mdddmmmm@yandex.ru>
 Date:   Sat Aug 10 20:59:10 2024 +0300
