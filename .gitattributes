@@ -175,13 +175,6 @@ CODEOWNER linguist-documentation=false
 CODEOWNER linguist-detectable
 CODEOWNERS linguist-documentation=false
 CODEOWNERS linguist-detectable
-COPYING linguist-documentation=false
-COPYING linguist-detectable
-INSTALL linguist-documentation=false
-INSTALL linguist-detectable
-NEWS linguist-documentation=false
-NEWS linguist-detectable
-README linguist-documentation=false
-README linguist-detectable
 CMakeLists.txt linguist-documentation=false
 CMakeLists.txt linguist-detectable
+

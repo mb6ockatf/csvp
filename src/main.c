@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 	char *FILENAME = arguments.args[0];
 	if (access(FILENAME, F_OK) != 0) {
 		printf("%s: file does not exist\n", FILENAME);
-		return 2;
+		return ENOENT;
 	}
 	FILE *file_ptr = fopen(FILENAME, "r");
 	char *line = NULL;
