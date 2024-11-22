@@ -3,6 +3,7 @@
 #define UNUSED(...) (void)(__VA_ARGS__)
 #include <stdio.h>
 #include <argp.h>
+#include <errno.h>
 #include <toml.h>
 #include <unistd.h>
 #include <stdlib.h>
